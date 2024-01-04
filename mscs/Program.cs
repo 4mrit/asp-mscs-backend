@@ -1,12 +1,18 @@
 using mscs.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 // builder.Services.Add(new ServiceDescriptor(typeof(DataBaseDeviceService), new DataBaseDeviceService(Configuration.GetConnectionString("MySqlConnectionString"))));
 builder.Services.AddTransient<DataBaseDeviceService>();
+builder.Services.AddControllers();
 
 var app = builder.Build();
+
+
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -24,5 +30,11 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+
+app.MapControllers();
+// lame method to add endpoints
+// app.MapGet("/devices", (context)=>{
+//     return context.Response.WriteAsync("List of Devices");
+// });
 
 app.Run();
