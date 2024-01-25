@@ -1,4 +1,6 @@
 using mscs.Services;
+using mscs.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +9,9 @@ builder.Services.AddRazorPages();
 // builder.Services.Add(new ServiceDescriptor(typeof(DataBaseDeviceService), new DataBaseDeviceService(Configuration.GetConnectionString("MySqlConnectionString"))));
 builder.Services.AddTransient<DataBaseDeviceService>();
 builder.Services.AddControllers();
+
+var connectionString = builder.Configuration.GetConnectionString("MySqlConnectionString");
+builder.Services.AddDbContext<MscsContext>(options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 var app = builder.Build();
 
