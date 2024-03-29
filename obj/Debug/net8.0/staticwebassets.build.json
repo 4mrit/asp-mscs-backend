@@ -1,0 +1,50 @@
+{
+  "Version": 1,
+  "Hash": "ZU1FniiSyJqJ3ZdhTyxSS0LWiYIZx5KxfQrBax6ZuY4=",
+  "Source": "mscs",
+  "BasePath": "_content/mscs",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [
+    {
+      "Identity": "/home/amrit/code/asp.net/mscs/obj/Debug/net8.0/scopedcss/bundle/mscs.styles.css",
+      "SourceId": "mscs",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/amrit/code/asp.net/mscs/obj/Debug/net8.0/scopedcss/bundle/",
+      "BasePath": "_content/mscs",
+      "RelativePath": "mscs.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/amrit/code/asp.net/mscs/obj/Debug/net8.0/scopedcss/bundle/mscs.styles.css"
+    },
+    {
+      "Identity": "/home/amrit/code/asp.net/mscs/obj/Debug/net8.0/scopedcss/projectbundle/mscs.bundle.scp.css",
+      "SourceId": "mscs",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/amrit/code/asp.net/mscs/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "BasePath": "_content/mscs",
+      "RelativePath": "mscs.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/amrit/code/asp.net/mscs/obj/Debug/net8.0/scopedcss/projectbundle/mscs.bundle.scp.css"
+    }
+  ]
+}
